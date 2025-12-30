@@ -1,6 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
+import SEO from '../components/SEO'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 
@@ -40,6 +41,12 @@ const AutomotiveServices = () => {
 
   return (
     <div className="min-h-screen">
+      <SEO 
+        title="Automotive Locksmith Near Me | Car Locksmith Services Atlanta, GA"
+        description="Professional automotive locksmith services in Atlanta, GA. Car lockout, key replacement, ignition repair, key fob programming. 24/7 service. Call (678) 650-4802."
+        keywords="automotive locksmith, car locksmith, auto locksmith near me, car lockout service, key replacement, ignition repair, key fob programming, car locksmith Atlanta"
+        canonical="https://locksmithta.com/automotive-services"
+      />
       <Navbar />
       
       <section className="bg-gradient-to-br from-locksmith-blue-900 via-locksmith-blue-800 to-locksmith-blue-900 text-white py-20">

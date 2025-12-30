@@ -1,0 +1,14 @@
+# robots.txt for Locksmith TA Website
+
+User-agent: *
+Allow: /
+
+# Disallow admin or private areas (if any)
+# Disallow: /admin/
+
+# Sitemap location
+Sitemap: https://locksmithta.com/sitemap.xml
+
+# Crawl-delay (optional, helps prevent server overload)
+Crawl-delay: 1
+

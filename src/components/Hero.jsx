@@ -1,6 +1,5 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import { Link } from 'react-router-dom'
 
 const FloatingKey = ({ delay, x, y }) => {
   return (
@@ -61,7 +60,7 @@ const Hero = () => {
           >
             Your Trusted Locksmith
             <br />
-            <span className="text-locksmith-gold-400">in Atlanta, GA</span>
+            <span className="text-locksmith-gold-400">24/7 Emergency Service in Atlanta, GA</span>
           </motion.h1>
 
           <motion.p
@@ -70,8 +69,9 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-xl md:text-2xl text-gray-200 mb-8 max-w-2xl mx-auto"
           >
-            Providing 24/7 locksmith services for over 10 years. Fast, reliable, and professional 
-            locksmith services available around the clock. We're here when you need us most.
+            Fast, reliable locksmith services in Atlanta, GA. 24/7 emergency locksmith services including 
+            lockout service, key replacement, and lock installation. Licensed, insured, and available now. 
+            Call for immediate locksmith assistance!
           </motion.p>
 
           <motion.div
@@ -95,7 +95,8 @@ const Hero = () => {
                 duration: 2,
                 repeat: Infinity,
               }}
-              className="bg-locksmith-gold-500 text-locksmith-blue-900 px-8 py-4 rounded-full font-bold text-lg shadow-2xl hover:bg-locksmith-gold-400 transition-all relative overflow-hidden group"
+              className="bg-locksmith-gold-500 text-locksmith-blue-900 px-8 py-4 rounded-full font-bold text-lg shadow-2xl hover:bg-locksmith-gold-400 transition-all relative overflow-hidden group min-h-[48px] flex items-center justify-center"
+              aria-label="Call Locksmith TA emergency line at 678-650-4802"
             >
               <span className="relative z-10 flex items-center gap-2">
                 <motion.span
@@ -114,17 +115,27 @@ const Hero = () => {
               />
             </motion.a>
 
-            <motion.div
+            <motion.a
+              href="#services"
+              onClick={(e) => {
+                e.preventDefault()
+                const element = document.getElementById('services')
+                if (element) {
+                  const offset = 80
+                  const elementPosition = element.getBoundingClientRect().top
+                  const offsetPosition = elementPosition + window.pageYOffset - offset
+                  window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                  })
+                }
+              }}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
+              className="border-2 border-locksmith-gold-500 text-locksmith-gold-400 px-8 py-4 rounded-full font-bold text-lg hover:bg-locksmith-gold-500 hover:text-locksmith-blue-900 transition-all inline-block cursor-pointer"
             >
-              <Link
-                to="/#services"
-                className="border-2 border-locksmith-gold-500 text-locksmith-gold-400 px-8 py-4 rounded-full font-bold text-lg hover:bg-locksmith-gold-500 hover:text-locksmith-blue-900 transition-all inline-block"
-              >
-                Our Services
-              </Link>
-            </motion.div>
+              Our Services
+            </motion.a>
           </motion.div>
 
           <motion.div

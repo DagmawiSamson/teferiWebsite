@@ -1,12 +1,19 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
+import SEO from '../components/SEO'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 
 const LockInstallationRepair = () => {
   return (
     <div className="min-h-screen">
+      <SEO 
+        title="Lock Installation & Repair Near Me | Professional Lock Services Atlanta, GA"
+        description="Professional lock installation and repair services in Atlanta, GA. Expert lock installation, lock repair, broken key extraction. 24/7 service. Call (678) 650-4802."
+        keywords="lock installation, lock repair, lock installation near me, lock repair near me, broken key extraction, lock installation Atlanta, lock repair Atlanta"
+        canonical="https://locksmithta.com/lock-installation-repair"
+      />
       <Navbar />
       
       <section className="bg-gradient-to-br from-locksmith-blue-900 via-locksmith-blue-800 to-locksmith-blue-900 text-white py-20">

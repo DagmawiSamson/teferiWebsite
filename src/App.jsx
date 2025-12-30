@@ -1,5 +1,6 @@
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import ScrollToTop from './components/ScrollToTop'
 import Home from './pages/Home'
 import ResidentialServices from './pages/ResidentialServices'
 import AutomotiveServices from './pages/AutomotiveServices'
@@ -11,6 +12,7 @@ import SecurityUpgrades from './pages/SecurityUpgrades'
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/residential-services" element={<ResidentialServices />} />

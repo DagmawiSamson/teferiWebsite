@@ -21,14 +21,14 @@ const ServiceCard = ({ icon, title, description, delay, effect = 'lift', path })
   const variants = cardVariants[effect] || cardVariants.lift
 
   return (
-    <Link to={path || '#'}>
+    <Link to={path || '#'} className="block">
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: '-100px' }}
         transition={{ duration: 0.6, delay }}
         whileHover={variants.hover}
-        className="bg-white rounded-xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer group"
+        className="bg-white rounded-xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer group h-full"
       >
       <motion.div
         whileHover={{ rotate: 360, scale: 1.2 }}

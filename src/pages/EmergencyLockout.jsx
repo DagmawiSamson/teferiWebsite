@@ -1,12 +1,19 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
+import SEO from '../components/SEO'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 
 const EmergencyLockout = () => {
   return (
     <div className="min-h-screen">
+      <SEO 
+        title="Emergency Lockout Service Near Me | 24/7 Lockout Service Atlanta, GA"
+        description="Locked out? Emergency lockout service near me in Atlanta, GA. Fast 24/7 response for home, car, and office lockouts. Call (678) 650-4802 now! No damage guarantee."
+        keywords="emergency lockout service, lockout service near me, locked out, car lockout, home lockout, office lockout, emergency locksmith near me, 24/7 lockout service Atlanta"
+        canonical="https://locksmithta.com/emergency-lockout"
+      />
       <Navbar />
       
       <section className="bg-gradient-to-br from-locksmith-blue-900 via-locksmith-blue-800 to-locksmith-blue-900 text-white py-20">
