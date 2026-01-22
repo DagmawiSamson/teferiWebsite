@@ -88,7 +88,8 @@ const Footer = () => {
               duration: 2,
               repeat: Infinity,
             }}
-            className="inline-block bg-locksmith-gold-500 text-locksmith-blue-900 px-10 py-5 rounded-full font-bold text-xl shadow-2xl hover:bg-locksmith-gold-400 transition-all relative overflow-hidden group"
+            className="inline-block bg-locksmith-gold-500 text-locksmith-blue-900 px-10 py-5 rounded-full font-bold text-xl shadow-2xl hover:bg-locksmith-gold-400 transition-all relative overflow-hidden group min-h-[56px] flex items-center justify-center"
+            aria-label="Call Locksmith TA at 678-650-4802"
           >
             <span className="relative z-10 flex items-center gap-3">
               <motion.span

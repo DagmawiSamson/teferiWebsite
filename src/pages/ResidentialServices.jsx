@@ -1,6 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
+import SEO from '../components/SEO'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 
@@ -40,6 +41,12 @@ const ResidentialServices = () => {
 
   return (
     <div className="min-h-screen">
+      <SEO 
+        title="Residential Locksmith Services Near Me | Home Locksmith Atlanta, GA"
+        description="Professional residential locksmith services in Atlanta, GA. Lock installation, repair, key replacement, and smart lock installation. 24/7 service. Call (678) 650-4802."
+        keywords="residential locksmith, home locksmith, residential locksmith near me, home locksmith Atlanta, lock installation, lock repair, key replacement, smart lock installation"
+        canonical="https://locksmithta.com/residential-services"
+      />
       <Navbar />
       
       {/* Hero Section */}

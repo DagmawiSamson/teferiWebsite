@@ -1,6 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
+import SEO from '../components/SEO'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 
@@ -40,6 +41,12 @@ const CommercialServices = () => {
 
   return (
     <div className="min-h-screen">
+      <SEO 
+        title="Commercial Locksmith Services Near Me | Business Locksmith Atlanta, GA"
+        description="Professional commercial locksmith services in Atlanta, GA. Master key systems, access control, commercial lock installation. 24/7 business locksmith service. Call (678) 650-4802."
+        keywords="commercial locksmith, business locksmith, commercial locksmith near me, master key systems, access control, commercial lock installation, business locksmith Atlanta"
+        canonical="https://locksmithta.com/commercial-services"
+      />
       <Navbar />
       
       <section className="bg-gradient-to-br from-locksmith-blue-900 via-locksmith-blue-800 to-locksmith-blue-900 text-white py-20">

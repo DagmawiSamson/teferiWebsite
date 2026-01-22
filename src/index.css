@@ -5,16 +5,46 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    /* Fix for iOS Safari smooth scrolling */
+    -webkit-overflow-scrolling: touch;
   }
   
   body {
     @apply bg-gray-50 text-gray-900;
+    /* Prevent text size adjustment on iOS */
+    -webkit-text-size-adjust: 100%;
+    /* Better touch handling for iOS */
+    touch-action: manipulation;
+  }
+  
+  /* Ensure buttons and links are touch-friendly on mobile */
+  a, button {
+    /* Minimum touch target size for iOS (44x44px recommended) */
+    min-height: 44px;
+    min-width: 44px;
+    /* Better tap highlighting on iOS */
+    -webkit-tap-highlight-color: rgba(255, 201, 26, 0.3);
+  }
+  
+  /* Fix for fixed positioning on iOS Safari */
+  @supports (-webkit-touch-callout: none) {
+    body {
+      /* iOS Safari specific fixes */
+      position: relative;
+    }
   }
 }
 
 @layer utilities {
   .text-shadow {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Safari-specific smooth scroll fix */
+  @supports (-webkit-overflow-scrolling: touch) {
+    .smooth-scroll {
+      -webkit-overflow-scrolling: touch;
+    }
   }
 }
 

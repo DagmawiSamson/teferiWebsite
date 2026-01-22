@@ -1,12 +1,19 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
+import SEO from '../components/SEO'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 
 const SecurityUpgrades = () => {
   return (
     <div className="min-h-screen">
+      <SEO 
+        title="Security Upgrades Near Me | Smart Lock Installation Atlanta, GA"
+        description="Modern security upgrades in Atlanta, GA. Smart locks, keyless entry, access control systems. Professional installation. Call (678) 650-4802 for security upgrades."
+        keywords="security upgrades, smart locks, keyless entry, access control, security upgrades near me, smart lock installation, keyless entry systems Atlanta"
+        canonical="https://locksmithta.com/security-upgrades"
+      />
       <Navbar />
       
       <section className="bg-gradient-to-br from-locksmith-blue-900 via-locksmith-blue-800 to-locksmith-blue-900 text-white py-20">
