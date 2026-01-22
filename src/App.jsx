@@ -23,10 +23,14 @@ function App() {
         <Route path="/lock-installation-repair" element={<LockInstallationRepair />} />
         <Route path="/security-upgrades" element={<SecurityUpgrades />} />
         <Route path="/contact" element={<Contact />} />
-        {/* Redirect routes for shorter URLs */}
+        {/* Redirect routes for shorter URLs and Google-indexed URLs */}
+        <Route path="/contact-us" element={<Navigate to="/contact" replace />} />
         <Route path="/commercial" element={<Navigate to="/commercial-services" replace />} />
         <Route path="/service" element={<Navigate to="/" replace />} />
         <Route path="/services" element={<Navigate to="/" replace />} />
+        <Route path="/service-area" element={<Navigate to="/" replace />} />
+        {/* Catch-all route - redirect unknown routes to home */}
+        <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </Router>
   )
