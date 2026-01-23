@@ -8,7 +8,6 @@ import CommercialServices from './pages/CommercialServices'
 import EmergencyLockout from './pages/EmergencyLockout'
 import LockInstallationRepair from './pages/LockInstallationRepair'
 import SecurityUpgrades from './pages/SecurityUpgrades'
-import Contact from './pages/Contact'
 
 function App() {
   return (
@@ -22,9 +21,9 @@ function App() {
         <Route path="/emergency-lockout" element={<EmergencyLockout />} />
         <Route path="/lock-installation-repair" element={<LockInstallationRepair />} />
         <Route path="/security-upgrades" element={<SecurityUpgrades />} />
-        <Route path="/contact" element={<Contact />} />
         {/* Redirect routes for shorter URLs and Google-indexed URLs */}
-        <Route path="/contact-us" element={<Navigate to="/contact" replace />} />
+        <Route path="/contact" element={<Navigate to="/" replace />} />
+        <Route path="/contact-us" element={<Navigate to="/" replace />} />
         <Route path="/commercial" element={<Navigate to="/commercial-services" replace />} />
         <Route path="/service" element={<Navigate to="/" replace />} />
         <Route path="/services" element={<Navigate to="/" replace />} />
